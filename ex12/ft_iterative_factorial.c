@@ -6,12 +6,11 @@
 /*   By: aperis-p <aperis-p@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 17:38:04 by aperis-p          #+#    #+#             */
-/*   Updated: 2023/04/28 15:54:05 by aperis-p         ###   ########.fr       */
+/*   Updated: 2023/04/28 17:55:35 by aperis-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <limits.h>
 
 int	ft_iterative_factorial(int nb)
 {
@@ -21,8 +20,7 @@ int	ft_iterative_factorial(int nb)
 
 	fact = nb;
 	counter = nb - 1;
-	max = INT_MAX / nb;
-	if (nb > 1 && nb < max)
+	if (nb > 1 && nb < 12)
 	{
 		while (counter != 0)
 		{
@@ -36,5 +34,5 @@ int	ft_iterative_factorial(int nb)
 
 // int	main(void)
 // {
-// 	printf("%i", ft_iterative_factorial(1854693147));
+// 	printf("%i", ft_iterative_factorial(13));
 // }
