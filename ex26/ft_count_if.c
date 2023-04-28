@@ -6,7 +6,7 @@
 /*   By: aperis-p <aperis-p@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 12:56:09 by aperis-p          #+#    #+#             */
-/*   Updated: 2023/04/28 18:23:00 by aperis-p         ###   ########.fr       */
+/*   Updated: 2023/04/28 19:20:28 by aperis-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,12 @@ int	ft_count_if(char **tab, int (*f)(char*))
 
 	counter = 0;
 	i = 0;
-	while (tab[i])
+	while (tab[i] != NULL)
 	{
-		if (f(tab[i]) != '\0')
+		if (f(tab[i]) == 1)
 		{
 			counter ++;
 			i++;
-		}
-		else
-		{
-			return (counter);
 		}
 	}
 	return (counter);

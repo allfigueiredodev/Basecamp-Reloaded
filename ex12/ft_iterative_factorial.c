@@ -6,7 +6,7 @@
 /*   By: aperis-p <aperis-p@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 17:38:04 by aperis-p          #+#    #+#             */
-/*   Updated: 2023/04/28 17:55:35 by aperis-p         ###   ########.fr       */
+/*   Updated: 2023/04/28 18:50:35 by aperis-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	ft_iterative_factorial(int nb)
 {
 	int	fact;
-	int	max;
 	int	counter;
 
 	fact = nb;
