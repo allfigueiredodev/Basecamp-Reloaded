@@ -6,7 +6,7 @@
 /*   By: aperis-p <aperis-p@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:13:22 by aperis-p          #+#    #+#             */
-/*   Updated: 2023/04/28 19:09:12 by aperis-p         ###   ########.fr       */
+/*   Updated: 2023/04/28 19:44:06 by aperis-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_recursive_factorial(int nb)
 	{
 		return (1);
 	}
-	else if (nb > 12)
+	else if (nb > 12 || nb < 0)
 	{
 		return (0);
 	}
@@ -33,5 +33,5 @@ int	ft_recursive_factorial(int nb)
 
 // int main(void)
 // {
-// 	printf("%i", ft_recursive_factorial(0));
+// 	printf("%i", ft_recursive_factorial(12));
 // }

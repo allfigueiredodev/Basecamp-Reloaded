@@ -6,7 +6,7 @@
 /*   By: aperis-p <aperis-p@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 12:56:09 by aperis-p          #+#    #+#             */
-/*   Updated: 2023/04/28 19:20:28 by aperis-p         ###   ########.fr       */
+/*   Updated: 2023/04/28 19:33:30 by aperis-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int	ft_count_if(char **tab, int (*f)(char*))
 		if (f(tab[i]) == 1)
 		{
 			counter ++;
-			i++;
 		}
+		i++;
 	}
 	return (counter);
 }
