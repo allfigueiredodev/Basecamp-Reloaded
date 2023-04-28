@@ -6,7 +6,7 @@
 /*   By: aperis-p <aperis-p@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 12:56:09 by aperis-p          #+#    #+#             */
-/*   Updated: 2023/04/28 14:36:49 by aperis-p         ###   ########.fr       */
+/*   Updated: 2023/04/28 16:45:59 by aperis-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,24 @@ int	ft_count_if(char **tab, int (*f)(char*))
 
 	counter = 0;
 	i = 0;
-	while (f(tab[i]))
+	while (tab[i])
 	{
-		counter ++;
-		i++;
+		if (f(tab[i]) != 0)
+		{
+			counter ++;
+			i++;
+		}
+		else
+		{
+			return (counter);
+		}
 	}
 	return (counter);
 }
 
 int	ft_rtr(char *str)
 {
-	if (str)
+	if (str[0] != '0')
 	{
 		return (1);
 	}
@@ -38,6 +45,6 @@ int	ft_rtr(char *str)
 
 // int main (void)
 // {
-// 	char *test_array[] = {"qwe", "rty", "uio", ""};
+// 	char *test_array[] = {"qwe", "", "e", "0"};
 // 	printf("%d", ft_count_if(test_array, ft_rtr));
 // }

@@ -6,16 +6,13 @@
 /*   By: aperis-p <aperis-p@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 21:20:17 by aperis-p          #+#    #+#             */
-/*   Updated: 2023/04/28 12:29:38 by aperis-p         ###   ########.fr       */
+/*   Updated: 2023/04/28 15:55:48 by aperis-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char str)
-{
-	write(1, &str, 1);
-}
+void	ft_putchar(char str);
 
 void	ft_putstr(char *str)
 {

@@ -6,7 +6,7 @@
 /*   By: aperis-p <aperis-p@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 17:38:04 by aperis-p          #+#    #+#             */
-/*   Updated: 2023/04/28 14:43:07 by aperis-p         ###   ########.fr       */
+/*   Updated: 2023/04/28 15:54:05 by aperis-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_iterative_factorial(int nb)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%i", ft_iterative_factorial(1854693147));
-}
+// int	main(void)
+// {
+// 	printf("%i", ft_iterative_factorial(1854693147));
+// }
